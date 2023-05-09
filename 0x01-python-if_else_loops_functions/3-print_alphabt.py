@@ -4,5 +4,5 @@ while (a < 123):
     if (a == 101 or a == 113):
         a += 1
         continue
-    print(f"{chr(a):s}", end="")
+    print("{:s}".format(chr(a)), end="")
     a += 1
