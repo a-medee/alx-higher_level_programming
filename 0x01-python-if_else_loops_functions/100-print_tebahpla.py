@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 a = 122
 while (a >= 97):
     if a % 2 == 0:
