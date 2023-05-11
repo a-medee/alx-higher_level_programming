@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+import hidden_4
 
 if __name__ == "__main__":
 
-    print("my_secret_santa")
-    print("print_hidden")
-    print("print_school")
+    for name in dir(hidden_4):
+        print(name)
