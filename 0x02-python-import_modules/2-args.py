@@ -7,7 +7,7 @@ if __name__ == "__main__":
     size_argument_list = len(sys.argv) - 1
 
     if size_argument_list == 0:
-        print("{:d} argument.".format(size_argument_list))
+        print("{:d} arguments.".format(size_argument_list))
     elif size_argument_list == 1:
         print("{:d} argument:".format(size_argument_list))
         print("{:d}: {:s}".format(1, arguments_list[1]))
