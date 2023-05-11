@@ -1,12 +1,15 @@
 #!/usr/bin/python3
-import calculator_1
+from calculator_1 import add
+from calculator_1 import div
+from calculator_1 import mul
+from calculator_1 import sub
 
 if __name__ == "__main__":
 
     a = 10
     b = 5
 
-    print("{:d} + {:d} = {:d}".format(a, b, calculator_1.add(a, b)))
-    print("{:d} + {:d} = {:d}".format(a, b, calculator_1.sub(a, b)))
-    print("{:d} + {:d} = {:d}".format(a, b, calculator_1.mul(a, b)))
-    print("{:d} + {:d} = {:d}".format(a, b, calculator_1.div(a, b)))
+    print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
+    print("{:d} + {:d} = {:d}".format(a, b, sub(a, b)))
+    print("{:d} + {:d} = {:d}".format(a, b, mul(a, b)))
+    print("{:d} + {:d} = {:d}".format(a, b, div(a, b)))
