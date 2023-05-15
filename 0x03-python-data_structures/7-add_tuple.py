@@ -18,7 +18,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
             return 0 + 0, 0 + 0
         if size_tuple_b == 1:
             return 0 + tuple_b[0], 0 + 0
-        if size_tuple_b == 2:
+        if size_tuple_b >= 2:
             return 0 + tuple_b[0], 0 + tuple_b[1]
 
     elif size_tuple_a == 1:
@@ -26,7 +26,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
             return tuple_a[0] + 0, 0 + 0
         if size_tuple_b == 1:
             return tuple_a[0] + tuple_b[0], 0 + 0
-        if size_tuple_b == 2:
+        if size_tuple_b >= 2:
             return tuple_a[0] + tuple_b[0], 0 + tuple_b[1]
 
     else:
@@ -34,5 +34,5 @@ def add_tuple(tuple_a=(), tuple_b=()):
             return tuple_a[0] + 0, tuple_a[1] + 0
         if size_tuple_b == 1:
             return tuple_a[0] + tuple_b[0], tuple_a[1] + 0
-        if size_tuple_b == 2:
+        if size_tuple_b >= 2:
             return tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_b[1]
