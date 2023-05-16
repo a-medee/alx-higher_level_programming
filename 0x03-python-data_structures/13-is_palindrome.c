@@ -36,6 +36,7 @@ int is_palindrome(listint_t **head)
 			}
 			else
 				break;
+
 		}
 		if (_size == size_cp / 2)
 			return (1);
