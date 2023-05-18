@@ -6,7 +6,7 @@ def complex_delete(a_dictionary, value):
 
     Args:
         a_dictionary: a dict object
-        value: the value to be delected
+        value: the value to be deleted
 
     Returns:
         a dict object
@@ -20,3 +20,5 @@ def complex_delete(a_dictionary, value):
             for items in keys_values:
                 if items[1] == value:
                     a_dictionary.pop(items[0])
+
+        return a_dictionary
