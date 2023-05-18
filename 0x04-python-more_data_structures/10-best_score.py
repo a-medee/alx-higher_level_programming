@@ -13,8 +13,8 @@ def best_score(a_dictionary):
     if a_dictionary is None:
         return None
 
-    values_list = max(list(a_dictionary.values()))
-
-    for i, j in a_dictionary.items():
-        if j == values_list:
-            return i
+    if a_dictionary:
+        values_list = max(list(a_dictionary.values()))
+        for i, j in a_dictionary.items():
+            if j == values_list:
+                return i
