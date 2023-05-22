@@ -19,10 +19,15 @@ def update_dictionary(a_dictionary, key, value):
         keys_list = list(a_dictionary.keys())
 
         if key is not None and value is not None:
-            for keys in keys_list:
-                if key == keys:
-                    a_dictionary[keys] = value
-                else:
-                    a_dictionary[key] = value
 
-        return a_dictionary
+            if len(a_dictionary) == 0:
+                a_dictionary[key] = value
+
+            else:
+                for keys in keys_list:
+                    if key == keys:
+                        a_dictionary[keys] = value
+                    else:
+                        a_dictionary[key] = value
+
+            return a_dictionary
