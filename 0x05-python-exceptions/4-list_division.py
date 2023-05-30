@@ -13,7 +13,7 @@ def list_division(my_list_1, my_list_2, list_length):
     new_list = list()
 
     if my_list_1 is not None and my_list_2 is not None and \
-       list_length >= 0 :
+       list_length >= 0:
 
         for i in range(list_length):
             try:
