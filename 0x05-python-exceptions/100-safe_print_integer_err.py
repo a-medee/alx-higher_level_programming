@@ -20,7 +20,4 @@ def safe_print_integer_err(value):
     except TypeError as e:
         print("{} Exception".format(e), file=sys.stderr)
         return False
-    except NameError as e:
-        print("{} Exception".format(e), file=sys.stderr)
-        return False
     return True
