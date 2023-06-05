@@ -1,0 +1,80 @@
+#!/usr/bin/python3
+"""This module defined a class named rectangle
+"""
+
+
+class Rectangle:
+    """This is an user-defined class
+
+    Attributes:
+        None
+    """
+    def __init__(self, width=0, height=0):
+        """The first function that is call when instanciating new objects
+
+        Args:
+            width(int): the width of the rectangle
+            height(int): the width of the rectangle
+        """
+        self.width = width
+        self.height = height
+
+    @property
+    def width(self):
+        """The getter for the width private instance attribute
+
+        Args:
+            None
+
+        Returns:
+            None
+        """
+        return self.__width
+
+    @width.setter
+    def width(self, value):
+        """A funtion that checks the value passed to the __init__ function for
+        its validity.
+
+        Args:
+            value(int): an int object
+
+        Returns:
+            None
+        """
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+
+        self.__width = value
+
+    @property
+    def height(self):
+        """The getter for the height private instance attribute
+
+        Args:
+            None
+
+        Returns:
+            None
+        """
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        """A funtion that checks the value passed to the __init__ function for
+        its validity.
+
+        Args:
+            value(int): an int object
+
+        Returns:
+            None
+        """
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+
+        self.__height = value
