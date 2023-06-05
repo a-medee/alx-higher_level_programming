@@ -97,7 +97,7 @@ class Rectangle:
     def __repr__(self):
         """Returns an "informal" representation of a rectangle oject
         """
-        return "<3-rectangle.Rectangle object at " +  hex(id(Rectangle()))
+        return "<3-rectangle.Rectangle object at " + hex(id(Rectangle()))
 
     def __str__(self):
         """Return a formal nicely representation of a rectangle object
