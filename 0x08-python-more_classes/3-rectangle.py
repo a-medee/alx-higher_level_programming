@@ -105,6 +105,10 @@ class Rectangle:
         """Return a formal nicely representation of a rectangle object
         """
         a = ""
+
+        if self.width == 0 or self.height == 0:
+            return a
+
         for i in range(self.height):
             for j in range(self.width):
                 a += "#"
