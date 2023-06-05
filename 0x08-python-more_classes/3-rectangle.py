@@ -97,12 +97,14 @@ class Rectangle:
     def __repr__(self):
         """Returns an "informal" representation of a rectangle oject
         """
+        if self.width == 0 or self.height == 0:
+            return ""
         return "<3-rectangle.Rectangle object at " + hex(id(Rectangle()))
 
     def __str__(self):
         """Return a formal nicely representation of a rectangle object
         """
-        a = str()
+        a = ""
         for i in range(self.height):
             for j in range(self.width):
                 a += "#"
