@@ -111,14 +111,14 @@ class Rectangle:
     def __str__(self):
         """Return a formal nicely representation of a rectangle object
         """
-        a = getattr(self, "print_symbol")
+        a = ""
 
         if self.width == 0 or self.height == 0:
             return a
 
         for i in range(self.height):
             for j in range(self.width):
-                a += str(a)
+                a += str(self.print_symbol)
             if i != self.height - 1:
                 a += "\n"
         return a
