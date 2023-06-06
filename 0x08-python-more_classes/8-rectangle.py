@@ -143,3 +143,7 @@ class Rectangle:
             return rect_2
         if rect_2.area() == rect_1.area():
             return rect_1
+
+    @classmethod
+    def square(cls, size=0):
+        return cls(size, size)
