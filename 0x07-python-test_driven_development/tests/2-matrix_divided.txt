@@ -1,0 +1,53 @@
+The "2-matrix_divided.py" module
+======================
+
+Using "matrix-divided"
+-------------------
+
+This is an example text file in reStructuredText format.  First import
+"matrix-divided" from the "2-matrix-divided" module:
+
+    >>> sys = __import__("sys")
+    >>> sys.path.insert(1, "../tests/2-matrix_dividedd")
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Expected results with given entries:
+
+    >>> matrix_divided([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 3)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0], [2.33, 2.67, 3.0]]
+    >>> matrix_divided([[]], 3)
+    [[]]
+    >>> matrix_divided([[1], [2], [3], [4]], 3)
+    [[0.33], [0.67], [1.0], [1.33]]
+
+    >>> matrix_divided([[1, 2], [4, 5], [7, 8]], 4)
+    [[0.25, 0.5], [1.0, 1.25], [1.75, 2.0]]
+    >>> matrix_divided([[1, 2], [4], [7, 8]], 4)
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
+    >>> matrix_divided([[1, 2], [], [7, 8]], 1)
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
+    >>> matrix_divided([[1, 2], [1, 4], [7, 8]], 0)
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+    >>> matrix_divided([[1.4, "-2.4"], [1.01, "4.12321"], [-7, -1.3328]], 0)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/float
+
+    >>> matrix_divided([[1, 2], [1, 4]], "1")
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+    >>> matrix_divided([1, 2], "1")
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix_divided([[1, 2], 2], "1")
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+    >>> matrix_divided([[10**100, 2], [3, 4]], 4.23)
+    [[2.3640661938534276e+99, 0.47], [0.71, 0.95]]

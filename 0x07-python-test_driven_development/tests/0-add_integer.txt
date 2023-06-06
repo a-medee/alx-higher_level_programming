@@ -1,0 +1,62 @@
+The "0-add_function" module
+======================
+
+Using "add_integer"
+-------------------
+
+Let's first import
+    >>> sys = __import__("sys")
+    >>> sys.path.insert(1, "../tests/0-add_integer")
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Expected results with given entries:
+
+    >>> add_integer(1)
+    99
+
+    >>> add_integer(-1, 4)
+    3
+
+    >>> add_integer("")
+    Traceback (most recent call last):
+    	  ...
+    TypeError: a must be an integer
+    >>> add_integer(1.2, 4.1)
+    5
+
+    >>> add_integer(-11.932423, 2.9)
+    -9
+
+    >>> add_integer(1, "")
+    Traceback (most recent call last):
+    	   ...
+    TypeError: b must be an integer
+
+    >>> add_integer(1, 1.90)
+    2
+
+    >>> add_integer([], [])
+    Traceback (most recent call last):
+           ...
+    TypeError: a must be an integer
+    >>> add_integer("  ", [1, 3, 4])
+    Traceback (most recent call last):
+           ...
+    TypeError: a must be an integer
+
+    >>> add_integer(1+2j, 3+4j)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> add_integer({12, 45}, 90)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> add_integer((12, 45))
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+    >>> add_integer(1e300, 1e300)
+    2000000000000000105009520510408840497408937162216318309831708231023604915977816391572742750160895728087408887665767756353885046470720861151289584369573413965696774401853151607475660467589576180118737906469941599890162238077935281760149305485560284989158517577640113685676231338944392773730918801080320
+    >>> add_integer(-10**100)
+    -9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999902
