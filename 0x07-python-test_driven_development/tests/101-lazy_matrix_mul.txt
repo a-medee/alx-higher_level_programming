@@ -12,10 +12,14 @@ Let's first import
 Expected results with given entries:
 
    >>> lazy_matrix_mul([[1, 2], [3, 4], [3, 4]], [[5, 6], [7, 8]])
-   [[19, 22], [43, 50], [43, 50]]
+   array([[19, 22],
+       [43, 50],
+       [43, 50]])
 
    >>> lazy_matrix_mul([[1, 2], [3, 4], [3, 4]], [[5, 6, 1], [7, 8, 2]])
-   [[19, 22, 5], [43, 50, 11], [43, 50, 11]]
+   array([[19, 22,  5],
+       [43, 50, 11],
+       [43, 50, 11]])
 
    >>> lazy_matrix_mul([[5, 6], [7, 8]], "Holberton")
    Traceback (most recent call last):
