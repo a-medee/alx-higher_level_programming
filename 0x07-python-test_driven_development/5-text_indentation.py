@@ -1,6 +1,7 @@
 #/usr/bin/python3
 """This module design a function that takes in a string for its
-   parameter"""
+   parameter
+"""
 
 def text_indentation(text):
     """A function that prints a text with 2 new lines after
