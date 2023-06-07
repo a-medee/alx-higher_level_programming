@@ -68,3 +68,7 @@ Expected results with given entries:
     >>> add_integer(math.nan)
     Traceback (most recent call last):
     ValueError: cannot convert float NaN to integer
+
+    >>> add_integer(sys.float_info.max * 100)
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
