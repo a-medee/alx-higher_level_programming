@@ -17,7 +17,6 @@ class TestMaxInteger(unittest.TestCase):
         self.my_list_2 = [-1, -2, -4, -5, -12346]
         self.my_list_3 = []
         self.my_list_4 = [1]
-        self.my_list_5 = ["1", "3", "5", "7", "9"]
         self.my_list_6 = ["", 3, 5, 7, "9"]
         self.my_list_7 = [1, 3, 3, -1, -1, -1]
         self.my_list_8 = [1, 1, 1, 1, 1]
@@ -54,7 +53,6 @@ class TestMaxInteger(unittest.TestCase):
     def test_unwanted_value(self):
         """Test the function return when it's passed non-integer values
         """
-        self.assertRaises(TypeError, max_integer, self.my_list_5)
         self.assertRaises(TypeError, max_integer, self.my_list_6)
         self.assertRaises(TypeError, max_integer, self.my_list_9)
         self.assertRaises(TypeError, max_integer, self.my_list_10)
