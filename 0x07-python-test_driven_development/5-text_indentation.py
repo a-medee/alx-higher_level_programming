@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 """This module design a function that takes in a string for its
    parameter
 """
