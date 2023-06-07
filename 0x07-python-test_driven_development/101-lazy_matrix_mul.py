@@ -6,7 +6,7 @@ import numpy as np
 """
 
 
-def matrix_mul(m_a, m_b):
+def lazy_matrix_mul(m_a, m_b):
     """A function that multiplies 2 matrices
 
     Args:
