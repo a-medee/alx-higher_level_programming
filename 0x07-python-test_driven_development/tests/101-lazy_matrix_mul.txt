@@ -6,8 +6,8 @@ Using "matrix_mul" function
 
 Let's first import
     >>> sys = __import__("sys")
-    >>> sys.path.insert(1, "../tests/100-matrix_mul")
-    >>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+    >>> sys.path.insert(1, "../tests/101-lazy_matrix_mul")
+    >>> matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
 
 Expected results with given entries:
 

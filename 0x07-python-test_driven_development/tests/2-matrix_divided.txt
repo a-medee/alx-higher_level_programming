@@ -49,5 +49,6 @@ Expected results with given entries:
     >>> matrix_divided([[1, 2], 2], "1")
     Traceback (most recent call last):
     TypeError: matrix must be a matrix (list of lists) of integers/floats
+
     >>> matrix_divided([[10**100, 2], [3, 4]], 4.23)
     [[2.3640661938534276e+99, 0.47], [0.71, 0.95]]

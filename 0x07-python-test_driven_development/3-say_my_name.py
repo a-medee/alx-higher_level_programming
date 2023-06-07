@@ -2,6 +2,7 @@
 """ This modules defines one funtion for a name call
 """
 
+
 def say_my_name(first_name, last_name=""):
     """A function that prints My name is <first name> <last name>
 

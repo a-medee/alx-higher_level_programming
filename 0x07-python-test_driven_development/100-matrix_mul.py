@@ -20,10 +20,10 @@ def matrix_mul(m_a, m_b):
     multiplied.
     """
 
-    if type(m_a) is not list or type(m_b) is not list:
+    if type(m_a) is not list:
         raise TypeError("m_a must be a list")
     if type(m_b) is not list:
-        raise TypeError("or m_b must be a list")
+        raise TypeError("m_b must be a list")
 
     for i in m_a:
         if type(i) is not list:
@@ -53,16 +53,15 @@ def matrix_mul(m_a, m_b):
             raise TypeError("each row of m_a must be of the same size")
 
     for elt in m_b:
-        if len(elt) != len(m_a[0]):
-            raise TypeError("each row of m_a must be of the same size")
+        if len(elt) != len(m_b[0]):
+            raise TypeError("each row of m_b must be of the same size")
 
     if len(m_a[0]) != len(m_b):
         raise ValueError("m_a and m_b can't be multiplied")
 
-
     new_mat = []
     for i in range(len(m_a)):
-        new_row  = []
+        new_row = []
         for j in range(len(m_b[0])):
             new_row.append(0)
         new_mat.append(new_row)
