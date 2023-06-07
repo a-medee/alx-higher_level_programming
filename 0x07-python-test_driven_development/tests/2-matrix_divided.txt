@@ -36,7 +36,7 @@ Expected results with given entries:
 
     >>> matrix_divided([[1.4, "-2.4"], [1.01, "4.12321"], [-7, -1.3328]], 0)
     Traceback (most recent call last):
-    TypeError: matrix must be a matrix (list of lists) of integers/float
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
 
     >>> matrix_divided([[1, 2], [1, 4]], "1")
     Traceback (most recent call last):
