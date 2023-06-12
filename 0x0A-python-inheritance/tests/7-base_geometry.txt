@@ -1,0 +1,28 @@
+The "7-base_geometry" module
+======================
+
+Using "BaseGeometry" class
+-------------------
+
+Let's first import
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+    >>> base = BaseGeometry()
+
+Expected results with given entries:
+
+    >>> base.area()
+    Traceback (most recent call last):
+    Exception: area() is not implemented
+    >>> base.integer_validator()
+    Traceback (most recent call last):
+    TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+    >>> base.integer_validator('1', True)
+    Traceback (most recent call last):
+    TypeError: 1 must be an integer
+    >>> base.integer_validator("Name", -1)
+    Traceback (most recent call last):
+    ValueError: Name must be greater than 0
+    >>> base.integer_validator("Name", 1)
+    >>> base.integer_validator("Name", "Name")
+    Traceback (most recent call last):
+    TypeError: Name must be an integer

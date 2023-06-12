@@ -1,0 +1,35 @@
+The "1-my_list" module
+======================
+
+Using "MyList" class
+-------------------
+
+Let's first import
+    >>> MyList = __import__('1-my_list').MyList
+
+Expected results with given entries:
+
+    >>> my_list = MyList()
+    >>> my_list([])
+    Traceback (most recent call last):
+    TypeError: 'MyList' object is not callable
+    >>> my_list
+    []
+    >>> my_list.extend([-1, -4, -5, -6, -19, 12])
+    >>> my_list.print_sorted()
+    [-19, -6, -5, -4, -1, 12]
+    >>> my_list.extend([-1, -4, -5, -6, -19, -12])
+    >>> my_list.print_sorted()
+    [-19, -19, -12, -6, -6, -5, -5, -4, -4, -1, -1, 12]
+    >>> my_list.extend([1, 4, 5, 6, 19, 12])
+    >>> my_list.print_sorted()
+    [-19, -19, -12, -6, -6, -5, -5, -4, -4, -1, -1, 1, 4, 5, 6, 12, 12, 19]
+    >>> my_list
+    [-1, -4, -5, -6, -19, 12, -1, -4, -5, -6, -19, -12, 1, 4, 5, 6, 19, 12]
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
+    >>> my_list = MyList()
+    >>> my_list.extend([1, 4, 5, 6, 19, 12])
+    >>> my_list.print_sorted()
+    [1, 4, 5, 6, 12, 19]
