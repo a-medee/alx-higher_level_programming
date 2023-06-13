@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-json = __import__("json")
-
 """ This module devises a function named to_json_string """
 
+json = __import__("json")
 
 def to_json_string(my_obj):
     """A function that returns the JSON representation
