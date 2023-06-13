@@ -24,6 +24,7 @@ class MyInt(int):
             None
         """
         super().__init__()
+        self.__an_int = an_int
 
     def __eq__(self, __value):
         """A funtion that executes the != operator
@@ -35,7 +36,7 @@ class MyInt(int):
         Returns:
             a bool object
         """
-        return super().__ne__(__value)
+        return self.__an_int.__ne__(__value)
 
     def __ne__(self, __value):
         """A funtion that executes the == operator
@@ -48,4 +49,4 @@ class MyInt(int):
             a bool object
         """
 
-        return super().__eq__(__value)
+        return self.__an_int.__eq__(__value)
