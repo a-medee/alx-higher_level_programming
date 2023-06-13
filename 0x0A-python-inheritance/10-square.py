@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """This module defines a non-empty class named Rectangle
 """
-import sys
-
+sys = __import__("sys")
 sys.path.insert(1, "./9-rectangle")
 Rectangle = __import__("9-rectangle").Rectangle
 

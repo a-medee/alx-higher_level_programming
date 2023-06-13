@@ -8,9 +8,6 @@ class BaseGeometry:
 
     Attributes:
         None
-
-    Raises:
-        Exception: with the message area() is not implemented
     """
 
     def area(self):

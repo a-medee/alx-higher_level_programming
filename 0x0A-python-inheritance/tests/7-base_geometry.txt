@@ -28,3 +28,9 @@ Expected results with given entries:
     Traceback (most recent call last):
     TypeError: Name must be an integer
     >>> base.integer_validator("", 1)
+    >>> base.integer_validator("age")
+    Traceback (most recent call last):
+    integer_validator() missing 1 required positional arguments: 'value'
+    >>> base.integer_validator('a', None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
