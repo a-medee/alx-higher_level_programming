@@ -13,7 +13,7 @@ def load_from_json_file(filename):
         filename: path to the file to be used filename
 
     Returns:
-        None
+        a python object
     """
     with open(filename, "r", encoding="utf-8") as a_file:
-        json.load(a_file)
+        return json.load(a_file)
