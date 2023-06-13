@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """ This module devises a function named from_json_string """
 
-"""json = __import__("json")"""
 import json
 
 
