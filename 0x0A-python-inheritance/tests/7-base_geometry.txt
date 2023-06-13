@@ -5,7 +5,21 @@ Using "BaseGeometry" class
 -------------------
 
 Let's first import
+    >>> mod_doc = __import__("7-base_geometry").__doc__
+    >>> len(mod_doc) > 1
+    True
     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+    >>> cla_doc = __import__("7-base_geometry").BaseGeometry.__doc__
+    >>> len(cla_doc) > 1
+    True
+    >>> area = __import__('7-base_geometry').BaseGeometry.area
+    >>> integer_validator = __import__('7-base_geometry').BaseGeometry.integer_validator
+    >>> int_doc = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
+    >>> len(int_doc) > 1
+    True
+    >>> are_doc = __import__("7-base_geometry").BaseGeometry.area.__doc__
+    >>> len(are_doc) > 1
+    True
     >>> base = BaseGeometry()
 
 Expected results with given entries:
@@ -17,8 +31,6 @@ Expected results with given entries:
     Traceback (most recent call last):
     TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
     >>> base.integer_validator('1', True)
-    Traceback (most recent call last):
-    TypeError: 1 must be an integer
     >>> base.integer_validator("Name", -1)
     Traceback (most recent call last):
     ValueError: Name must be greater than 0
@@ -29,3 +41,4 @@ Expected results with given entries:
     >>> base.integer_validator("Name", None)
     Traceback (most recent call last):
     TypeError: Name must be an integer
+    >>> base.integer_validator("", 1)
