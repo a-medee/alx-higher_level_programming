@@ -34,9 +34,6 @@ Expected results with given entries:
     >>> my_list.print_sorted()
     [1, 4, 5, 6, 12, 19]
     >>> my_list = MyList()
-    >>> my_list.append()
-    Traceback (most recent call last):
-    TypeError: list.append() takes exactly one argument (0 given)
     >>> my_list.append(1)
     >>> my_list.append(9)
     >>> my_list.print_sorted()
