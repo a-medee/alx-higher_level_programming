@@ -22,9 +22,10 @@ def append_after(filename="", search_string="", new_string=""):
         for line in a_file:
             my_file_list.append(line)
 
-    for line in my_file_list:
-        if search_string in line:
-            my_file_list.insert(my_file_list.index(line) + 1, new_string)
+    for line_number in range(len(my_file_list)):
+        if search_string in my_file_list[line_number]:
+            my_file_list.insert(line_number + 1, new_string)
+            line_number += 1
 
     with open(filename, "w", encoding="utf-8") as a_file:
         a_file.write("".join(my_file_list))
