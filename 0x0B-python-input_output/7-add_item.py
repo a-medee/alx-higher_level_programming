@@ -16,4 +16,4 @@ for i in sys.argv[1:]:
 save_to_json_file(my_args, filename)
 
 if __name__ == "__main__":
-    print(load_from_json_file(filename))
+    load_from_json_file(filename)
