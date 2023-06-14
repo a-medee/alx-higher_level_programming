@@ -46,7 +46,7 @@ class Student:
                     if i in self.__dict__.keys():
                         a_dict[i] = self.__dict__[i]
             else:
-                a_dict =  self.__dict__
+                a_dict = self.__dict__
         else:
             a_dict = self.__dict__
 
