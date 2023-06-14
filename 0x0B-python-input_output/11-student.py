@@ -62,5 +62,5 @@ class Student:
         Returns:
             None
         """
+
         self.__dict__ = json
-        return self.__dict__
