@@ -29,10 +29,10 @@ class Student:
         Student instance
 
         Args:
-            None
+            attrs(list): a list of strings
 
         Returns:
-            None
+            a dictionary
         """
         str_c = int()
         a_dict = dict()
