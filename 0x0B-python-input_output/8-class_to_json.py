@@ -2,8 +2,6 @@
 
 """ This modules devises a function named class_to_json """
 
-import json
-
 
 def class_to_json(obj):
     """A function that returns the dictionary description with simple
