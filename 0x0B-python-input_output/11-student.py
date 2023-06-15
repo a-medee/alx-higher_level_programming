@@ -62,5 +62,7 @@ class Student:
         Returns:
             None
         """
-
-        self.__dict__ = json
+        if json:
+            self.__dict__ = json
+        else:
+            pass
