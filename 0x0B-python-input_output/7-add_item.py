@@ -11,7 +11,8 @@ filename = "add_item.json"
 my_args = []
 
 for i in sys.argv[1:]:
-    my_args.append(i)
+    if len(i) != 0:
+        my_args.append(i)
 
 save_to_json_file(my_args, filename)
 

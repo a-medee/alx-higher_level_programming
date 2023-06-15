@@ -25,7 +25,7 @@ def append_after(filename="", search_string="", new_string=""):
     for line_number in range(len(my_file_list)):
         if search_string in my_file_list[line_number]:
             my_file_list.insert(line_number + 1, new_string)
-            line_number += 1
+        line_number += 1
 
     with open(filename, "w", encoding="utf-8") as a_file:
         a_file.write("".join(my_file_list))
