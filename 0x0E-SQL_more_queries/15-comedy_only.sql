@@ -8,6 +8,4 @@ WHERE tv_show_genres.genre_id = (
         SELECT tv_genres.id
   	FROM tv_genres
   	WHERE tv_genres.name = 'Comedy'
-);
-
-ORDER BY tv_shows.title;
+) ORDER BY tv_shows.title;
