@@ -98,7 +98,7 @@ class TestRectangle(unittest.TestCase):
             print(self.rec.__nb_objects)
             print(self.rec_1.__nb_objects)
 
-    def test_error_when_accessing_privates_variables_from_within_rectangle(self):
+    def test_error_when_accessing_private_variables_from_within_rectangle(self):
         """This function tests for right errors raised when trying to access
         privates variable of the Rectangle class via either Rectangle or its
         instances
