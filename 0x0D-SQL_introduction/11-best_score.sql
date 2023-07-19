@@ -3,10 +3,6 @@
 -- Records should be ordered by score (top first)
 -- The database name will be passed as an argument of the mysql command
 
-USE hbtn_0c_0;
-
-database_name = $argv[1];
-
 SELECT score, name
 FROM second_table
 WHERE score >= 10
